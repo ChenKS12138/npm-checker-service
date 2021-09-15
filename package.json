@@ -1,0 +1,39 @@
+{
+  "name": "npm-checker-service",
+  "version": "1.0.0",
+  "description": "npm checker service",
+  "private": true,
+  "scripts": {
+    "start": "dotenv -e .env ts-node src/index.ts",
+    "tsc": "rm -rf dist && tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@types/resolve": "^1.20.1",
+    "@types/tar-stream": "^2.2.1",
+    "axios": "^0.21.4",
+    "axios-cache-adapter": "^2.7.3",
+    "fs-extra": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-bouncer": "^6.0.4",
+    "koa-router": "^10.1.1",
+    "memfs": "^3.2.4",
+    "mongodb": "^4.1.1",
+    "resolve": "^1.20.0",
+    "tar-stream": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.1.16",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bouncer": "^6.0.3",
+    "@types/koa-router": "^7.4.4",
+    "dotenv": "^10.0.0",
+    "dotenv-cli": "^4.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
